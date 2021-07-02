@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hafta 2 Gun 2</title>
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button onclick="fetchData()">Getir</button>
+        <!--Todo-->
+        <div id="filterClass" class ="form-inline" style="display: none;">
+            <div>
+                <label>İsim Filtresi:</label>
+                <input type="text" id="fname" name="fname" maxlength="1" placeholder="İsmin baş harfi">
+            </div>
+            <div>
+                <label>Yaş Filtresi:
+
+                <input type="checkbox" class="Aktif" id="notMinor">>18  </input></label>
+            </div>
+            <div>
+            
+                <label>Aktiflik Filtresi:
+                <input type="checkbox" id="true">Aktif</input></label>
+
+            </div>
+           
+            <button onclick="filterData('isActive')" id="filterButton">Filtrele</button>
+        </div>
+        <table class="list" style="display: none;">
+            <thead >
+                <tr>
+                    <th>E-posta</th>
+                    <th>İsim</th>
+                    <th>Yaş</th>
+                    <th>Şehir</th>
+                    <th>Telefon</th>
+                </tr>
+            </thead>
+            <tbody class="people">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
